@@ -93,6 +93,17 @@ function clickBox(ev){
 				
 				if(openDiamonds===sizeOfBox){ // check if we get all the diamonds
 					document.getElementsByClassName('messages')[0].innerHTML = 'Hurray! you got all the diamonds.';
+					
+					// open all the boxes
+					var unknownClassNode = document.querySelectorAll('.unknown');
+					unknownClassNode.forEach((el) => {
+						if(el.classList.contains('unknown'))
+							el.classList.remove('unknown');
+					});
+					
+					// hide arrow
+					if(document.getElementsByClassName('arrow')[0])
+						document.getElementsByClassName('arrow')[0].classList.remove('arrow');
 				}
 			}
 		}else{ // shows empty box if there is no diamond
