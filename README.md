@@ -9,7 +9,7 @@ To start the Application:
 
 If you have done the above steps correctly, you should see the below
 
-![Screenshot](./screenshot.png)
+![Screenshot](./initialboard.png)
 
 If you make a change, run the last two steps above to see it reflected.
 
